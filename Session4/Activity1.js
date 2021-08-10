@@ -21,12 +21,14 @@ function reverseString(str){
 
   //return str.split("").reverse().join("");
   let result = '';
-  
-
+  let arr = str.split("");
+  let reverseArr = arr.reverse();
+  result = reverseArr.join("");
+  return result;
 }
 
 console.log(reverseString("hello"));
-
+console.log(reverseString("I love my country"));
 
 
 
