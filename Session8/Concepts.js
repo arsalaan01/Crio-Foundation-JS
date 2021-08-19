@@ -27,9 +27,20 @@ function xyz(x, y, ...z) {
 }
 xyz("hey", "hello", "wassup", "goodmorning", "hi", "howdy");
 
-const [a, b] = [10, 20]; //a = 10, b = 20
+//const [a, b] = [10, 20]; //a = 10, b = 20
 function f() {
   return [1, 2, 3];
 }
 const [a, , b] = f();
+
+const obj = { a1: 10, b1: 20 };
+const { a1, b1 } = obj; //unpacking obj properties
+console.log(a1 + "    " + b1)
+const o = {p: 42, q: true};
+const {p: foo, q: bar} = o;
+
+console.log("--------");
+console.log(foo + "    " + bar);
+
+
 
